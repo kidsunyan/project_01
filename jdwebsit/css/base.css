@@ -1,0 +1,295 @@
+body
+{
+    background-color: #F4F4F4;
+    
+}
+/* margin和浮动的关系 */
+.w
+{
+    width: 1190px;
+    margin: 0 auto;
+}
+.fl
+{
+    float: left;
+}
+.fr
+{
+    float: right;
+}
+.shortcut
+{
+    background-color:rgb(227,228,229);
+    height: 30px;
+    border-bottom: 1px #ddd solid;
+    font-size: 12px;
+    line-height: 30px;
+    color: #999;
+}
+.city
+{
+    margin-left: 200px;
+}
+.shortcut,.help a
+{
+    text-decoration: none;
+    color: #999;
+}
+.shortcut a:hover
+{
+    color: #be1717;
+}
+.shortcut li{
+   
+    float: left;
+}
+.line
+{
+    width: 1px;
+    height: 10px;
+    color: #ccc;
+    margin: auto 10px;
+}
+.red
+{
+    color: #f10125 !important;
+}
+.mobile
+{
+ position: relative;
+}
+.mobile img
+{
+ position: absolute;
+  left: -10px;
+  top: 24px;
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+/* 中间公共部分 */
+.middle
+{
+    height: 140px;
+   
+    position: relative;
+}
+
+.logo a{
+    display: block;
+    width: 190px;
+    height: 170px;
+     background-image: url("../imags/logo.jpg");
+     background-size: 100%;
+     position: absolute;
+     top: -30px;
+     left: 0;
+     box-shadow: 2px 3px rgb(0,0,0,.3);
+}
+.search
+{
+    width: 560px;
+    height: 35px;
+   
+    position: absolute;
+    left: 320px;;
+    top: 25px;
+}
+.search input
+{
+    width: 498px;
+    height: 31px;
+    border: 1px solid #f10125;
+   /* 为啥用浮动 */
+    float: left;
+}
+.search button
+{
+    width: 56px;
+    height: 35px;
+   background-color: #f10125;
+   /* 如何去掉input的边框 */
+   border: #f10125;
+    float: left;
+}
+.search button i
+{
+   font-style: normal;
+   color: #fff;
+}
+.shopCar
+{
+    width:188px ;
+    height: 33px;
+    border: 1px solid #db1818;
+    position: absolute;
+    top: 25px;
+    right: 95px;
+   
+    /* 居中对齐 */
+    text-align: center;
+    line-height: 33px;
+    color: #f10125;
+}
+/* 可以作为公共部分,超链接的颜色为什么可以不通过祖先设置 */
+.shopCar a
+{
+  text-decoration: none;
+  color: #f10125;
+}
+/* 加了绝对定位,固定定位,浮动的行内元素可以直接设置宽高,不用转换为块元素 */
+.shopCar span
+{
+    width: 15px;
+    height: 15px;
+    background-color: #f10125;
+    border-radius: 50%;
+    /* 绝对定位转换为块元素 */
+    position: absolute;
+    top: 5px;
+    left: 145px;
+    line-height: 15px;
+    color: #fff;
+}
+.hotwords
+{
+    width: 500px;
+    height: 25px;
+
+    position: absolute;
+    left: 320px;
+    top: 60px;
+    line-height: 25px;
+}
+.hotwords a
+{
+    text-decoration: none;
+    color: #999;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.hotwords a:hover
+{
+    color: #f10125;
+}
+.navitems
+{
+    width: 700px;
+    height: 30px;
+  
+    position: absolute;
+    left: 310px;
+    top: 110px;
+    line-height: 30px;
+}
+.navitems a
+{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.navitems a:hover
+{
+    color: #f10125;
+}
+/* 底部公共部分 */
+.footer
+{
+    height: 500px;
+    background-color: #eaeaea;
+    margin-top: 35px;
+}
+.service
+{   
+    border-bottom: 1px solid #bdb1b1;
+    padding: 30px 0;
+    overflow: hidden;
+}
+.service ul li
+{
+    width: 297px;
+    height: 42px;
+   
+    line-height: 42px;
+    float: left;
+}
+.service ul p
+{
+    font-weight: 700;
+    float: left;
+    margin: auto 0;
+}
+.service ul h5
+{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    background-image:url("../imags/多快好省精灵图.png") ;
+    float: left;
+    margin-left: 62px;
+    margin-right: 20px;
+}
+.service li:nth-child(2) h5
+{
+  background-position: 0 -47px;
+}
+.service li:nth-child(3) h5
+{
+  background-position: 0 -94px;
+}
+.service li:nth-child(4) h5
+{
+  background-position: 0 -141px;
+}
+.help
+{
+    border-bottom: 1px solid #bdb1b1;
+    height: 175px;
+    padding-top: 25px;
+}
+.help dl
+{
+    width: 192px;
+ 
+    float: left;
+}
+.help dt,.coverage h5
+{
+    line-height: 30px;
+    font-size: 16px;
+    color: #666;
+}
+.help dd
+{
+    line-height: 22px;
+    font-size: 12px;
+}
+.help a:hover
+{
+    color: #f10125;
+}
+.coverage
+{
+    width: 200px;
+    height: 150px;
+    
+}
+/* 向右排 */
+.coverage h5
+{
+    margin-left: 35px;
+}
+.coverage p
+{
+    font-size: 12px;
+    color: #999;
+    line-height: 18px;
+    width: 170px;
+}
+.coverage a
+{
+    font-size: 12px;
+    color: #999;
+    margin-left: 105px;
+}

@@ -1,0 +1,111 @@
+.grid
+{
+    height: 480px;
+}
+.grid-left
+{
+  width: 190px;
+  height: 100%;
+  background-color:#6e6568;
+  /* 给/设置的 */
+  color: #fff;
+  font-size: 14px;
+}
+.grid-left ul
+{
+    padding: 20px 0;
+}
+.grid-left ul li
+{
+    line-height: 25px;
+    padding-left: 12px;
+}
+.grid-left ul li:hover
+{
+    background-color: #9e9698;
+}
+.grid-left ul li a
+{
+    /* 给超链接设置的 */
+   text-decoration: none;
+   color: #fff;
+   font-size: 14px;
+   margin: 0 2px;
+}
+.grid-left ul li a:hover
+{
+    color: #f10215;
+}
+.grid-middle
+{
+  width: 790px;
+  height: 100%;
+  background-color: rgb(84, 225, 235);
+  margin-left: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.grid-middle .turn
+{
+    width: 600%;
+    position: absolute;
+}
+.grid-middle .turn li
+{
+    float: left;
+}
+.grid-middle img
+{
+    width: 790px;
+    height: 480px;
+}
+.arrow-l,.arrow-r
+{   position: absolute;
+    width: 30px;
+    height: 60px;
+    background-color: rgb(233, 122, 200,.3);
+    text-align: center;
+    line-height: 60px;
+    font-size: 26px;
+    color: #fff;
+    display: none;
+}
+.arrow-l
+{
+    left: 0;
+    top: 45%;
+}
+.arrow-r
+{
+   right: 0;
+   top: 45%; 
+}
+.grid-middle .cirtle
+{
+    width: 190px;
+    height: 20px;
+    
+    position: absolute;
+    left: 20px;
+    top: 430px;
+}
+.grid-middle .cirtle .current
+{
+    background-color: #f10215;
+}
+
+.grid-middle .cirtle li
+{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin: 4px;
+}
+.grid-right
+{
+width: 190px;
+height: 100%;
+background-color: rgb(182, 82, 233);
+}
